@@ -10,6 +10,10 @@ class MyGrid(Widget):
     name = ObjectProperty(None)
     email = ObjectProperty(None)
 
+    def btn(self, ):  # since we defined inside class by default we dont need to pass "instsance" to the function
+        print("name: ", self.name.text, "\nEmail", self.email.text)
+        self.name.text = " "
+        self.email.text = " "
 
 
 class DemoApp(App):
